@@ -1,0 +1,23 @@
+.potential {
+    padding-top: 60px;
+    padding-bottom: 56px;
+    text-align: center;
+    background-image: url('/assets/images/sections/potential.jpg');
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 60px;
+        width: 460px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__text {
+        text-align: left;
+        width: 480px;
+        border-radius: 14px;
+        padding: 64px 40px;
+        background-color: var(--accent-color);
+        font: var(--base-font);
+    }
+}
