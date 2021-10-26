@@ -1,0 +1,27 @@
+.feature {
+    padding: 64px 10px 20px 10px;
+    border-radius: 14px;
+    background-color: var(--accent-color);
+    width: 250px;
+    height: 296px;
+    position: relative;
+    text-align: center;
+
+    &__logo {
+        width: 88px;
+        height: 88px;
+        object-fit: cover;
+        position: absolute;
+        top: -44px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__title {
+        font: 700 17px var(--base-font-family);
+        color: var(--darker-color);
+        margin-top: 0;
+        margin-bottom: 14px;
+        height: 44px;
+    }
+}

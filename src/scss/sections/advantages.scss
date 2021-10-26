@@ -1,0 +1,29 @@
+.advantages {
+    background-image: url('/assets/images/sections/advantages.jpg');
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    &__title {
+        width: 460px;
+        color: var(--contrast-light-color);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__description {
+        margin-bottom: 64px;
+    }
+
+    &__text {
+        margin-right: auto;
+        margin-left: auto;
+        width: 600px;
+        color: var(--contrast-light-color);
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-between;
+    }
+}
