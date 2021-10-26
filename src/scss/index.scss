@@ -1,6 +1,9 @@
-@import 'variables';
-@import 'fonts';
-@import 'normalize';
-@import 'common';
+@import './variables';
+@import './fonts';
+@import './normalize';
+@import './common';
 
-@import 'responsible';
+@import './components/index';
+@import './sections/index';
+
+@import './responsible';
