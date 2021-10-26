@@ -1,0 +1,10 @@
+@import '../mixins';
+
+.ico-button {
+    @include button(var(--darker-color));
+
+    .icon {
+        filter: invert(67%) sepia(89%) saturate(494%) hue-rotate(3deg)
+            brightness(90%) contrast(102%);
+    }
+}

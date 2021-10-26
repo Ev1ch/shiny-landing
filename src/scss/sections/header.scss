@@ -1,0 +1,36 @@
+.header {
+    height: 675px;
+    background-image: url('/assets/images/sections/header.jpg');
+    background-size: cover;
+    padding-top: 20px;
+
+    &__container {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 78px auto;
+    }
+
+    &__content {
+        width: 460px;
+        display: flex;
+    }
+
+    &__description {
+        margin: auto;
+    }
+
+    &__text {
+        margin-bottom: 72px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__panel {
+        .whitepaper-button {
+            margin-right: 40px;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@import '../mixins';
+
+.whitepaper-button {
+    @include button(var(--contrast-light-color));
+}

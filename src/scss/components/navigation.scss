@@ -1,0 +1,24 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--darker-color);
+    border-radius: 14px;
+    align-items: center;
+
+    &__section {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        font: 600 15px var(--base-font-family);
+        color: var(--contrast-light-color);
+
+        &--active {
+            color: var(--accent-color);
+        }
+    }
+}

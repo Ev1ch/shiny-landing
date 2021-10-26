@@ -1,0 +1,31 @@
+@import '../mixins';
+
+.language-select {
+    position: relative;
+
+    select {
+        @include button(
+            rgba(var(--contrast-light-color-rgb), 0.1),
+            true,
+            var(--contrast-light-color)
+        );
+
+        padding-right: 32px;
+        appearance: none;
+        border: none;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid var(--contrast-light-color);
+        right: 16px;
+        top: 18px;
+    }
+
+    &__option {
+        color: var(--darker-color);
+    }
+}
