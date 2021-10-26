@@ -1,0 +1,27 @@
+.meeting {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        align-items: center;
+    }
+
+    &__video {
+        width: 480px;
+        padding: 20px;
+        border-radius: 14px;
+        background-color: var(--accent-color);
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        width: 460px;
+    }
+}
