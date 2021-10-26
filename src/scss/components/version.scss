@@ -1,0 +1,63 @@
+.version {
+    padding: 64px 54px 25px 54px;
+    background-color: var(--accent-color);
+    border-radius: 14px;
+    width: 460px;
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        top: -44px;
+        left: 50%;
+        width: 88px;
+        height: 88px;
+        object-fit: cover;
+        transform: translateX(-50%);
+    }
+
+    &__title {
+        color: var(--contrast-light-color);
+        font: 700 15px var(--base-font-family);
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        color: var(--darker-color);
+        font: 700 15px var(--base-font-family);
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__features {
+        list-style-type: none;
+        padding-left: 46px;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__feature {
+        font: 300 15px var(--base-font-family);
+        color: var(--darker-color);
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            content: '';
+            background-image: url('/assets/icons/feature-tick.png');
+            background-size: cover;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            left: -46px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}

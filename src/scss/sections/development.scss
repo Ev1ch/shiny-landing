@@ -1,0 +1,17 @@
+.development {
+    background-image: url('/assets/images/sections/development.jpg');
+    background-size: cover;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 94px;
+
+    &__title {
+        color: var(--accent-color);
+        margin-bottom: 80px;
+    }
+
+    .versions {
+        display: flex;
+        justify-content: space-between;
+    }
+}
