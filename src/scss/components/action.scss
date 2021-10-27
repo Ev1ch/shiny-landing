@@ -1,0 +1,26 @@
+.action {
+    text-align: left;
+
+    &__date {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        font: 700 16px var(--base-font-family);
+    }
+
+    &__description {
+        font: 400 16px var(--base-font-family);
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &::before {
+        display: block;
+        content: '';
+        width: 28px;
+        height: 28px;
+        background-image: url('/assets/icons/point.svg');
+    }
+}

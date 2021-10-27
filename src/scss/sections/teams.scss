@@ -1,0 +1,43 @@
+.teams {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    &__container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .team {
+        margin-bottom: 40px;
+    }
+
+    &__divider {
+        margin-bottom: 40px;
+    }
+
+    .advisors {
+        margin-bottom: 44px;
+    }
+
+    .timeline {
+        background-image: url('/assets/images/sections/timeline.svg');
+        background-position: 0 20px;
+        background-size: calc(100% - 2px) auto;
+        background-repeat: no-repeat;
+        display: flex;
+
+        &__title {
+            width: 168px;
+        }
+
+        .actions {
+            margin-top: 5px;
+            margin-left: 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 230px);
+            gap: 20px;
+            grid-auto-rows: 154px;
+        }
+    }
+}

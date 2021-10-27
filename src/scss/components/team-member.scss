@@ -1,0 +1,39 @@
+.team-member {
+    text-align: center;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+
+    &__image {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__description {
+        margin-top: 80px;
+        padding: 86px 20px 20px 20px;
+        border-radius: 8px;
+        background-color: var(--light-color);
+    }
+
+    &__name {
+        font: 700 15px var(--base-font-family);
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__information {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}

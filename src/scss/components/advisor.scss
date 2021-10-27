@@ -1,0 +1,27 @@
+.advisor {
+    padding: 20px;
+    background-color: var(--light-color);
+    border: 8px;
+    height: 386px;
+
+    &__image {
+        height: 120px;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font: 700 15px var(--base-font-family);
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__information {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
