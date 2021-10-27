@@ -1,0 +1,21 @@
+.sale-round {
+    padding: 20px;
+    text-align: left;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    width: 320px;
+
+    &__title {
+        font: 700 17px var(--base-font-family);
+        color: var(--contrast-light-color);
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}

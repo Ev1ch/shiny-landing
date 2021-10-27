@@ -1,0 +1,14 @@
+.financial-point {
+    width: 220px;
+
+    &__title {
+        margin-top: 8px;
+        margin-bottom: 6px;
+        font: 700 15px var(--base-font-family);
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
