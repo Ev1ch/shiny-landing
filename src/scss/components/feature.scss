@@ -1,18 +1,22 @@
 .feature {
-    padding: 64px 10px 20px 10px;
-    border-radius: 14px;
-    background-color: var(--accent-color);
     width: 250px;
-    height: 296px;
     position: relative;
     text-align: center;
+
+    &__content {
+        border-radius: 14px;
+        height: 296px;
+        margin-top: 40px;
+        padding: 64px 10px 20px 10px;
+        background-color: var(--accent-color);
+    }
 
     &__logo {
         width: 88px;
         height: 88px;
         object-fit: cover;
         position: absolute;
-        top: -44px;
+        top: 0;
         left: 50%;
         transform: translateX(-50%);
     }

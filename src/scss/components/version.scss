@@ -1,13 +1,17 @@
 .version {
-    padding: 64px 54px 25px 54px;
-    background-color: var(--accent-color);
-    border-radius: 14px;
     width: 460px;
     position: relative;
 
+    &__content {
+        margin-top: 39px;
+        border-radius: 14px;
+        padding: 64px 54px 25px 54px;
+        background-color: var(--accent-color);
+    }
+
     &__logo {
         position: absolute;
-        top: -44px;
+        top: 0;
         left: 50%;
         width: 88px;
         height: 88px;
