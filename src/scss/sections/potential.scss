@@ -5,6 +5,18 @@
     background-image: url('/assets/images/sections/potential.jpg');
     background-size: cover;
 
+    &__container {
+        position: relative;
+    }
+
+    &__app {
+        top: 90px;
+        right: 0;
+        position: absolute;
+        object-fit: cover;
+        height: 483px;
+    }
+
     &__title {
         margin-bottom: 60px;
         width: 460px;
@@ -19,5 +31,14 @@
         padding: 64px 40px;
         background-color: var(--accent-color);
         font: var(--base-font);
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
