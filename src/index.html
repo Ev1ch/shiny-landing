@@ -11,12 +11,13 @@
         <header class="header">
             <div class="container header__container">
                 <nav class="navigation">
+                    <button class="navigation__toggle"></button>
                     <img
                         src="/assets/images/logo.svg"
                         alt="Shiny"
                         class="navigation__logo"
                     />
-                    <div class="navigation__section">
+                    <div class="navigation__section navigation__list">
                         <a
                             href=""
                             class="navigation__link navigation__link--active"
@@ -25,6 +26,29 @@
                         <a href="" class="navigation__link">ICO details</a>
                         <a href="" class="navigation__link">Roadmap</a>
                         <a href="" class="navigation__link">Team</a>
+                        <a href="#" class="login-button">Login</a>
+                        <div class="language-select">
+                            <select>
+                                <option
+                                    value=""
+                                    class="language-select__option"
+                                >
+                                    EN
+                                </option>
+                                <option
+                                    value=""
+                                    class="language-select__option"
+                                >
+                                    UA
+                                </option>
+                                <option
+                                    value=""
+                                    class="language-select__option"
+                                >
+                                    RU
+                                </option>
+                            </select>
+                        </div>
                     </div>
                     <div class="navigation__section">
                         <div class="language-select">
@@ -85,12 +109,15 @@
         </header>
         <main>
             <section class="known-from">
-                <div class="container">
+                <div class="known-from__container container">
                     <div class="known-from__content">
                         <h2 class="base-title">Known from</h2>
                         <div class="partners swiper">
                             <div
-                                class="slider-button partners__button--previous"
+                                class="
+                                    slider-button
+                                    partners__button partners__button--previous
+                                "
                             >
                                 <i class="icon icon--arrow-left"></i>
                             </div>
@@ -120,7 +147,10 @@
                             </div>
 
                             <button
-                                class="slider-button partners__button--next"
+                                class="
+                                    slider-button
+                                    partners__button partners__button--next
+                                "
                             >
                                 <i class="icon icon--arrow-right"></i>
                             </button>
@@ -129,14 +159,13 @@
                 </div>
             </section>
             <section class="meeting">
-                <div class="container">
+                <div class="container meeting__container">
                     <div class="meeting__content">
                         <div class="meeting__video">
                             <iframe
                                 src="https://www.youtube.com/embed/SYm04J5iCvo"
                                 title="YouTube video player"
                                 frameborder="0"
-                                height="264"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
@@ -158,7 +187,7 @@
                 </div>
             </section>
             <section class="development">
-                <div class="container">
+                <div class="container development__container">
                     <div class="development__content">
                         <div class="development__description">
                             <h2 class="base-title development__title">
@@ -463,6 +492,10 @@
                             </div>
                         </div>
                         <div class="sales">
+                            <img
+                                class="information__app"
+                                src="/assets/images/sections/information.png"
+                            />
                             <div class="sale-round">
                                 <p class="sale-round__title">Private sale</p>
                                 <div class="sale-round__description base-text">
@@ -519,11 +552,14 @@
             </section>
             <section class="teams">
                 <div class="container teams__container">
-                    <div class="team__content">
+                    <div class="teams__content">
                         <h2 class="base-title">Team</h2>
                         <div class="team swiper">
                             <button
-                                class="slider-button team__button--previous"
+                                class="
+                                    slider-button
+                                    team__button team__button--previous
+                                "
                             >
                                 <i class="icon icon--arrow-left"></i>
                             </button>
@@ -639,7 +675,12 @@
                                 </div>
                             </div>
 
-                            <button class="slider-button team__button--next">
+                            <button
+                                class="
+                                    slider-button
+                                    team__button team__button--next
+                                "
+                            >
                                 <i class="icon icon--arrow-right"></i>
                             </button>
                         </div>
@@ -648,7 +689,10 @@
                         </h2>
                         <div class="advisors">
                             <button
-                                class="slider-button advisors__button--previous"
+                                class="
+                                    slider-button
+                                    advisors__button advisors__button--previous
+                                "
                             >
                                 <i class="icon icon--arrow-left"></i>
                             </button>
@@ -758,7 +802,10 @@
                             </div>
 
                             <button
-                                class="slider-button advisors__button--next"
+                                class="
+                                    slider-button
+                                    advisors__button advisors__button--next
+                                "
                             >
                                 <i class="icon icon--arrow-right"></i>
                             </button>
@@ -767,65 +814,81 @@
                             <h2 class="base-title timeline__title">Timeline</h2>
                             <div class="actions">
                                 <div class="action">
-                                    <p class="action__date">Sept 2021</p>
-                                    <div class="action__description">
-                                        <p>Official Whitepaper release</p>
+                                    <div class="action__content">
+                                        <p class="action__date">Sept 2021</p>
+                                        <div class="action__description">
+                                            <p>Official Whitepaper release</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <p class="action__date">Oct 2021</p>
-                                    <div class="action__description">
-                                        <p>
-                                            Smart Contract development and audit
-                                            Marketing
-                                        </p>
+                                    <div class="action__content">
+                                        <p class="action__date">Oct 2021</p>
+                                        <div class="action__description">
+                                            <p>
+                                                Smart Contract development and
+                                                audit Marketing
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <p class="action__date">Oct 2021</p>
-                                    <div class="action__description">
-                                        <p>
-                                            Smart Contract development and audit
-                                            Marketing
-                                        </p>
+                                    <div class="action__content">
+                                        <p class="action__date">Oct 2021</p>
+                                        <div class="action__description">
+                                            <p>
+                                                Smart Contract development and
+                                                audit Marketing
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <p class="action__date">Jun 2022</p>
-                                    <div class="action__description">
-                                        <p>
-                                            Listing of the SHI token on
-                                            exchanges
-                                        </p>
+                                    <div class="action__content">
+                                        <p class="action__date">Jun 2022</p>
+                                        <div class="action__description">
+                                            <p>
+                                                Listing of the SHI token on
+                                                exchanges
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <p class="action__date">Mar 2022</p>
-                                    <div class="action__description">
-                                        <p>Start Main-Sale</p>
+                                    <div class="action__content">
+                                        <p class="action__date">Mar 2022</p>
+                                        <div class="action__description">
+                                            <p>Start Main-Sale</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <p class="action__date">Jan 2022</p>
-                                    <div class="action__description">
-                                        <p>Start Pre-Sale</p>
-                                        <p>Airdrop</p>
-                                        <p>Bounty campaign</p>
+                                    <div class="action__content">
+                                        <p class="action__date">Jan 2022</p>
+                                        <div class="action__description">
+                                            <p>Start Pre-Sale</p>
+                                            <p>Airdrop</p>
+                                            <p>Bounty campaign</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <p class="action__date">Q3-Q4 2022</p>
-                                    <div class="action__description">
-                                        <p>Blockchain development</p>
-                                        <p>Testing</p>
+                                    <div class="action__content">
+                                        <p class="action__date">Q3-Q4 2022</p>
+                                        <div class="action__description">
+                                            <p>Blockchain development</p>
+                                            <p>Testing</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <p class="action__date">Q1 2023</p>
-                                    <div class="action__description">
-                                        <p>Full rollout of Version 1</p>
-                                        <p>Blockchain development</p>
-                                        <p>Expansion in Europe</p>
+                                    <div class="action__content">
+                                        <p class="action__date">Q1 2023</p>
+                                        <div class="action__description">
+                                            <p>Full rollout of Version 1</p>
+                                            <p>Blockchain development</p>
+                                            <p>Expansion in Europe</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
