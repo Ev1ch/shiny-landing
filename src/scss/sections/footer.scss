@@ -1,0 +1,21 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: var(--darker-color);
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+        font: 500 17px var(--base-font-family);
+        color: var(--contrast-light-color);
+    }
+
+    &__social {
+        text-align: right;
+    }
+}
