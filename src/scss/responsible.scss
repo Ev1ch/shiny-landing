@@ -1,4 +1,4 @@
-@media screen and (max-width: $breakpoint-sm) {
+@media screen and (max-width: $breakpoint-lg) {
     .navigation {
         width: calc(100% - 20px);
         margin-right: auto;
@@ -109,6 +109,11 @@
         padding-top: 40px;
         padding-bottom: 40px;
 
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         .versions {
             flex-direction: column;
             gap: 16px;
@@ -209,7 +214,6 @@
 
     .information {
         &__container {
-            width: auto;
             padding-right: 0;
             padding-left: 0;
         }
@@ -361,359 +365,43 @@
     }
 }
 
-@media screen and (max-width: $breakpoint-lg) {
-    .navigation {
-        width: calc(100% - 20px);
-        margin-right: auto;
-        margin-left: auto;
-
-        &__toggle {
-            display: block;
-        }
-
-        &__list {
-            display: none;
-        }
-
-        .language-select {
-            display: none;
-        }
-    }
-
-    .header {
-        height: 1030px;
-        padding-top: 10px;
-        padding-bottom: 40px;
-        text-align: center;
-        background-color: var(--accent-color);
-        background-image: url('/assets/images/sections/header-mobile.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-
-        &__container {
-            width: auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        &__content {
-            margin-top: auto;
-            width: auto;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        &__text {
-            margin-bottom: 20px;
-        }
-
-        &__panel {
-            display: flex;
-            gap: 20px;
-            flex-direction: column;
-            align-items: center;
-
-            .whitepaper-button {
-                margin-right: 0;
-            }
-        }
-    }
-
-    .known-from {
-        padding-top: 20px;
-        padding-bottom: 30px;
-        background-color: var(--light-color);
-
-        &__container {
-            width: calc(100% - 20px);
-        }
-
-        &__content {
-            padding: 0;
-        }
-
-        .partners {
-            padding-right: 40px;
-            padding-left: 40px;
-        }
-    }
-
+@media screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
     .meeting {
         padding-top: 40px;
-        padding-bottom: 40px;
-        margin-bottom: 0;
-        text-align: center;
-
-        &__content {
-            flex-direction: column;
-            gap: 20px;
-        }
 
         &__video {
-            width: 100%;
             height: 400px;
-
-            iframe {
-                height: 100%;
-            }
+            border-radius: 14px;
         }
 
-        &__description {
-            width: 320px;
+        &__container {
+            width: var(--container-width);
         }
     }
+}
 
-    .development {
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        .versions {
-            flex-direction: column;
-            gap: 16px;
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .information {
+        .charts {
+            justify-content: center;
+            flex-direction: row;
         }
 
-        .version {
-            width: auto;
+        .sales {
+            justify-content: center;
 
-            &__content {
-                padding-top: 54px;
-            }
-
-            &__title {
-                margin-bottom: 0;
-            }
-
-            &__subtitle {
-                margin-bottom: 20px;
-            }
-
-            &__features {
-                padding-left: 0;
-                text-align: center;
-            }
-
-            &__feature {
-                padding-top: 34px;
-
-                &::before {
-                    top: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-
-                &:not(:last-of-type) {
-                    margin-bottom: 20px;
-                }
-            }
+            flex-direction: row;
         }
     }
 
     .potential {
-        padding-bottom: 400px;
-
-        &__app {
-            top: initial;
-            bottom: -508px;
-            height: 500px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        &__title,
-        &__text {
-            width: auto;
-        }
-
-        &__text {
-            text-align: center;
-            padding: 20px;
-        }
-    }
-
-    .advantages {
-        padding-top: 140px;
-
-        &__title {
-            width: auto;
-        }
-
-        &__text {
-            width: auto;
-        }
-
-        .features {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .feature {
-            width: auto;
-
-            &__title {
-                height: auto;
-            }
-
-            &__content {
-                padding: 64px 20px 20px 20px;
-                height: auto;
-            }
-        }
-    }
-
-    .information {
         &__container {
-            padding-right: 0;
-            padding-left: 0;
-        }
-
-        &__app {
-            height: 432px;
-            right: 50%;
-            transform: translateX(50%);
-        }
-
-        &__description {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        &__text {
-            width: auto;
-        }
-
-        .financial-table {
-            justify-content: center;
-            width: auto;
-            flex-wrap: wrap;
-            margin-bottom: 454px;
-            gap: 20px;
-        }
-
-        .financial-point {
-            width: 150px;
-        }
-
-        .sales {
-            flex-direction: column;
-        }
-
-        .sale-round {
-            width: auto;
-        }
-
-        .charts {
-            flex-direction: column;
-        }
-
-        .chart {
-            width: auto;
-        }
-    }
-
-    .teams {
-        &__container {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .team,
-        .advisors {
-            padding-right: 20px;
-            padding-left: 20px;
-
-            &__button {
-                display: block;
-
-                &--previous {
-                    left: 0;
-                }
-
-                &--next {
-                    right: 0;
-                }
-            }
-        }
-
-        .timeline {
-            flex-direction: column;
-            background-image: none;
-
-            &__title {
-                width: auto;
-            }
-
-            .actions {
-                margin-left: 0;
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                padding-bottom: 44px;
-
-                &::before {
-                    z-index: -1;
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 12px;
-                    background-color: var(--accent-color);
-                    width: 2px;
-                }
-
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 26px;
-                    height: 26px;
-                    background-image: url('/assets/icons/point-empty.svg');
-                    background-size: cover;
-                }
-            }
-
-            .action {
-                height: auto;
-                display: flex;
-                align-items: flex-start;
-                gap: 20px;
-
-                &__content {
-                    margin-top: 0;
-                }
-
-                &::before {
-                    flex-shrink: 0;
-                }
-            }
-        }
-    }
-
-    .footer {
-        &__header {
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        &__section {
-            text-align: center;
-        }
-
-        .footer-navigation {
-            text-align: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 20px;
-
-            &__subtitle {
-                margin-bottom: 10px;
-            }
+            width: var(--container-width);
         }
     }
 }
 
-@media screen and (max-width: $breakpoint-xl) {
+@media screen and (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl) {
     .advantages {
         .features {
             justify-content: center;

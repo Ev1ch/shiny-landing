@@ -23,6 +23,8 @@
 
     &__description {
         margin-bottom: 30px;
+        position: relative;
+        z-index: 2;
     }
 
     &__text {
