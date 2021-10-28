@@ -1,14 +1,11 @@
 .slider-button {
     z-index: 2;
-    position: absolute;
     height: 60px;
     width: 60px;
     display: flex;
     background-color: var(--dark-color);
     border: none;
     border-radius: 50%;
-    transform: translateY(-50%);
-    top: 50%;
 
     .icon {
         margin: auto;
@@ -20,9 +17,5 @@
 
     &--next {
         right: 0;
-    }
-
-    &.swiper-button-disabled {
-        display: none;
     }
 }

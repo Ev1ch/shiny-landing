@@ -9,7 +9,28 @@
     }
 
     .team {
+        overflow: hidden;
         margin-bottom: 40px;
+        position: relative;
+
+        &__list {
+            align-items: stretch;
+        }
+
+        &__button {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &--previous {
+                left: -40px;
+            }
+
+            &--next {
+                right: -40px;
+            }
+        }
     }
 
     &__divider {
@@ -17,7 +38,28 @@
     }
 
     .advisors {
+        overflow: hidden;
         margin-bottom: 44px;
+        position: relative;
+
+        &__list {
+            align-items: stretch;
+        }
+
+        &__button {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &--previous {
+                left: -40px;
+            }
+
+            &--next {
+                right: -40px;
+            }
+        }
     }
 
     .timeline {

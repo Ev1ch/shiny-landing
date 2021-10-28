@@ -10,10 +10,29 @@
     }
 
     .partners {
+        overflow: hidden;
         display: flex;
         align-items: center;
         position: relative;
         padding-right: 85px;
         padding-left: 85px;
+
+        &__content {
+            padding: 0;
+        }
+
+        &__button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &--previous {
+                left: 0;
+            }
+
+            &--next {
+                right: 0;
+            }
+        }
     }
 }

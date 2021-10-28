@@ -1,8 +1,12 @@
 .action {
     text-align: left;
 
-    &__date {
+    &__content {
         margin-top: 10px;
+    }
+
+    &__date {
+        margin-top: 0;
         margin-bottom: 4px;
         font: 700 16px var(--base-font-family);
     }

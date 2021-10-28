@@ -5,6 +5,11 @@
     padding-top: 60px;
     padding-bottom: 94px;
 
+    &__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     &__title {
         color: var(--accent-color);
         margin-bottom: 32px;
@@ -12,6 +17,7 @@
 
     .versions {
         display: flex;
+        gap: 80px;
         justify-content: space-between;
     }
 }
