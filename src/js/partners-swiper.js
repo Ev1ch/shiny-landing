@@ -13,7 +13,7 @@ export const PARTNERS_SWIPER_CONFIG = {
             slidesPerGroup: 1,
             slidesPerView: 1,
         },
-        [Breakpoints.MD]: {
+        [Breakpoints.SM]: {
             slidesPerGroup: 2,
             slidesPerView: 2,
         },
