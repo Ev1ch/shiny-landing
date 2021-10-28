@@ -350,6 +350,10 @@
 
         &__section {
             text-align: center;
+
+            &:nth-of-type(1) {
+                width: auto;
+            }
         }
 
         .footer-navigation {
